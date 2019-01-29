@@ -1,0 +1,10 @@
+M = 1.0;
+L = 1.0;
+g = 9.81;
+x = linspace(0,L/2,100);
+s = L/2-x;
+Ix = M*L^2/12 + M*s.^2;
+om = sqrt(2*M*g*s./Ix);
+plot(x,om);
+xlabel('x [m]');
+ylabel('\omega_{max} [rad/s]');
