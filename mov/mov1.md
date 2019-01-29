@@ -154,7 +154,7 @@ plot(t, x)
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f234f09c908>]
+    [<matplotlib.lines.Line2D at 0x7f6487673860>]
 
 
 
@@ -166,7 +166,7 @@ Podem afegir-hi un titol a la gràfica, les etiquetesllegendes als eixos i una g
 
 
 ```python
-title("Gràfica posició - temps")
+title(r"Gràfica $x = 2 + 3 (t - 1)$")
 xlabel("t (s)")
 ylabel("x (m)")
 grid()
@@ -178,7 +178,7 @@ plot(t,x,"red")
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f234f025748>]
+    [<matplotlib.lines.Line2D at 0x7f64875a4ac8>]
 
 
 
