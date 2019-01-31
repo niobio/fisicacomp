@@ -15,11 +15,11 @@ Partint de l'equació anterior ens plantegem la següent qüestió: si coneixem 
 
 Intentarem resoldre aquest problema de manera numèrica utilitzant el llenguatge Python. Si tenim un nombre de nuclis $N_i$ a l'instant $t_i$, un instant posterior $\Delta t = t_{i+1} - t_i$, el nombre de nuclis hi haurà canviat en 
 
-$$\Delta N = - \lambda \Delta t$$
+$$\Delta N = - \lambda N \Delta t$$
 
 El nombre total de nuclis en l'instant $t_{i+1}$ serà 
 
-$$N_{i+1} = N_i - \lambda (t_{i+1} - t_i)$$
+$$N_{i+1} = N_i - \lambda N_i (t_{i+1} - t_i)$$
 
 Aquest procés el podem continuar fins arribar al temps desitjat. 
 
@@ -29,8 +29,11 @@ Implementarem l'algoritme amb un exemple. Considerem una mostra radioactiva de 1
 ```python
 from pylab import *
 
+# Periode de semidesintegració
+t_semi = 5
+
 # Determinació de la constant de decaiment
-Lambda = log(2)/5
+Lambda = log(2)/t_semi
 
 # temps inicial
 t0 = 0
@@ -63,7 +66,7 @@ plot(t, N)
 
 
 
-    [<matplotlib.lines.Line2D at 0x7fcf095d0f28>]
+    [<matplotlib.lines.Line2D at 0x7fa3401bfeb8>]
 
 
 
@@ -103,7 +106,7 @@ plot(t,N_a, 'r')
 
 
 
-    [<matplotlib.lines.Line2D at 0x7fcf0b8b4080>]
+    [<matplotlib.lines.Line2D at 0x7fa3400ece48>]
 
 
 
@@ -126,7 +129,7 @@ legend(loc="upper right")
 
 
 
-    <matplotlib.legend.Legend at 0x7fcf09482128>
+    <matplotlib.legend.Legend at 0x7fa3400710f0>
 
 
 
