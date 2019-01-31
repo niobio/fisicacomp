@@ -87,7 +87,7 @@ i, finalment,
 
 $$N = N_0 e^{-\lambda t}$$
 
-Per tant, tenim en l'expresió anterior la solució analítica de la equació diferencial anterior. Ara ens resulta possible trobar la solució exacta per a després poder comparar-la amb la solució nuèrica que havíem trobat abans.
+Per tant, tenim en l'expresió anterior la solució analítica de la equació diferencial anterior. Ara ens resulta possible trobar la solució exacta per a després poder comparar-la amb la solució numèrica que havíem trobat abans.
 
 
 ```python
