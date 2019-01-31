@@ -1,7 +1,7 @@
 
 # Decaiment radioactiu
 
-[Descarregar notebook](decaiment_radiactiu.ipynb) 
+[Descarregar notebook](decaiment_radioactiu.ipynb) 
 
 La radioactivitat és una reacció de desintegració que tenen alguns nuclis atòmics. Es tracta d'un procés aleatori en la que el nucli emet una partícula o radiació. La velocitat de desintegració és proporcional a la quantitat de nuclis radioactis presents en una mostra, això es pot expressar a través de la relació següent:
 
@@ -13,7 +13,7 @@ on $N$ és el nombre de nuclis radioactius actuals i la constant de proporcional
 
 Partint de l'equació anterior ens plantegem la següent qüestió: si coneixem la quantitat de nuclis radioactius presents en un determinat instant i la seva velocitat de transformació, com podem saber la quantitat de nuclis que quedaran en un instant posterior?
 
-Intentarem resoldre aquest problema de manera numèrica utilitzant el llenguatge Python. Si tenim un nombre de nuclis $N_i$ a l'instant $t_i$P, un instant posterior $\Delta t = t_{i+1} - t_i$, el nombre de nuclis hi haurà canviat en 
+Intentarem resoldre aquest problema de manera numèrica utilitzant el llenguatge Python. Si tenim un nombre de nuclis $N_i$ a l'instant $t_i$, un instant posterior $\Delta t = t_{i+1} - t_i$, el nombre de nuclis hi haurà canviat en 
 
 $$\Delta N = - \lambda \Delta t$$
 
@@ -63,7 +63,7 @@ plot(t, N)
 
 
 
-    [<matplotlib.lines.Line2D at 0x7ff6d0550f98>]
+    [<matplotlib.lines.Line2D at 0x7fcf095d0f28>]
 
 
 
@@ -103,7 +103,7 @@ plot(t,N_a, 'r')
 
 
 
-    [<matplotlib.lines.Line2D at 0x7ff6d04bc3c8>]
+    [<matplotlib.lines.Line2D at 0x7fcf0b8b4080>]
 
 
 
@@ -126,7 +126,7 @@ legend(loc="upper right")
 
 
 
-    <matplotlib.legend.Legend at 0x7ff6d0432cf8>
+    <matplotlib.legend.Legend at 0x7fcf09482128>
 
 
 
